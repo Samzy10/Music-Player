@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <audio src="" id="audio-source"></audio>
+
+
+    <!-- home section -->
+    
+    <section class="home-section">
+        <!-- carousel -->
+        <div class="carousel">
+            <img src="images/Buju-BNXN-Bad-Since-97-Ep-artwork.webp" class="active" alt="">
+            <img src="images/Buju-Sorry-Im-Late-Ep-artwork.webp" alt="">
+            <img src="images/Burna-Boy-Love-Damini-artwork.jpeg" alt="">
+            <img src="images/Wizkids-14-track-studio-album-points-in-different-directions-1.jpg" alt="">
+        </div>
+
+        <!-- playlists -->
+        <h1 class="heading">Recently played</h1>
+        <div class="playlist-group">
+            <div class="playlist-card">
+                <img src="images/Buju-Sorry-Im-Late-Ep-artwork.webp" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Sorry I'm Late</p>
+            </div>
+            <div class="playlist-card">
+                <img src="images/Buju-BNXN-Bad-Since-97-Ep-artwork.webp" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Bad since '97</p>
+            </div>
+            <div class="playlist-card">
+                <img src="images/Burna-Boy-Love-Damini-artwork.jpeg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Love, Damini</p>
+            </div>
+            <div class="playlist-card">
+                <img src="images/Wizkids-14-track-studio-album-points-in-different-directions-1.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Made In Lagos</p>
+            </div>
+        </div>
+
+        <h1 class="heading">based on your listening</h1>
+        <div class="playlist-group">
+            <div class="playlist-card">
+                <img src="images/Rema-png.webp" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Rave & Roses</p>
+            </div>
+            <div class="playlist-card">
+                <img src="images/Burna-Boy-Love-Damini-artwork.jpeg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Love, Damini</p>
+            </div>
+            <div class="playlist-card">
+                <img src="images/Buju-Sorry-Im-Late-Ep-artwork.webp" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Sorry I'm Late</p>
+            </div>
+            <div class="playlist-card">
+                <img src="images/Wizkids-14-track-studio-album-points-in-different-directions-1.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Made In Lagos</p>
+            </div>
+            <div class="playlist-card">
+                <img src="images/Buju-BNXN-Bad-Since-97-Ep-artwork.webp" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Made In Lagos</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="music-player-section">
+
+        <img src="images/back.png" class="back-btn icon hide" alt="">
+        <img src="images/nav.png" class="nav-btn icon hide" alt="">
+        
+    
+        <div class="seek-bar-container">
+            <input type="range" class="music-seek-bar" value="0">
+            <p class="current-time hide">00 : 00</p>
+            <p class="duration hide">00 : 00</p>
+        </div>
+
+        <h1 class="current-song-name">Daniel Benson</h1>
+        <p class="artist-name hide">Buju-BNXN</p>
+        <img src="images/Buju-Sorry-Im-Late-Ep-artwork.webp" class="cover hide" alt="">
+
+        <div class="controls">
+            <span class="fas fa-redo"></span>
+            <div class="main">
+                <i class="fas fa-backward active"></i>
+                <i class="fas fa-play active"></i>
+                <i class="fas fa-pause"></i>
+                <i class="fas fa-forward active"></i>
+            </div>
+            <input type="range" class="volume-slider" max="1" value="1" step="0.1">
+            <span class="fas fa-volume-up"></span>
+
+
+        </div>
+    
+    </section>
+
+    <section class="playlist">
+
+        <img src="images/back.png" class="back-btn icon" alt="">
+ 
+        <h1 class="title">playlist</h1>
+
+        <div class="queue active">
+            <div class="queue-cover">
+                <img src="images/Buju-BNXN-Bad-Since-97-Ep-artwork.webp" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">In My Mind</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="images/Buju-BNXN-Bad-Since-97-Ep-artwork.webp" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Loose Emotions</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="images/Buju-BNXN-Bad-Since-97-Ep-artwork.webp" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Modupe</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="images/Buju-Sorry-Im-Late-Ep-artwork.webp" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Daniel Benson</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="images/Buju-Sorry-Im-Late-Ep-artwork.webp" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Never Stopped</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="images/Buju-Sorry-Im-Late-Ep-artwork.webp" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">For Here</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="images/Buju-Sorry-Im-Late-Ep-artwork.webp" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Ogechukwu</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="images/Love-Damini-cover.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Kilometer</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="images/Burna-Boy-Love-Damini-artwork.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Solid</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="images/Burna-Boy-Love-Damini-artwork.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Last Last</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="images/Love-Damini-cover.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Cloak & Dagger</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="images/Burna-Boy-Love-Damini-artwork.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Common Person</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="images/Love-Damini-cover.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">How Bad Could It Be</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="images/Love-Damini-cover.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Toni-Ann Singh</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="images/Wizkids-14-track-studio-album-points-in-different-directions-1.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Essence</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="images/Wizkids-14-track-studio-album-points-in-different-directions-1.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Gyrate</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="images/Wizkids-14-track-studio-album-points-in-different-directions-1.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Blessed</p>
+        </div>
+    </section>
+
+
+    <SCRipt src="data.js"></SCRipt>
+    <script src="script.js"></script>
+</body>
+</html>
