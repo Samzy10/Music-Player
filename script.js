@@ -151,7 +151,7 @@ const formatTime  = (time) => {
 }
 
 
-/// seekbar events
+/// seek bar events
 
 setInterval(() => {
     seekBar.value = music.currentTime;
